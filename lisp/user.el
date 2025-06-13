@@ -5,7 +5,7 @@
  ;; "light": ef-light
  ;; "spring": ef-spring
  ;; "summer": ef-summer
- ;; "dark": ef-owl
+ ;; "owl": ef-owl
  ;; "autumn": ef-autumn
  ;; "winter": ef-winter
  ;; "bio": ef-bio

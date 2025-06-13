@@ -7,7 +7,7 @@
       (load-theme 'ef-spring))
   (if (string-equal-ignore-case user-boot-theme "summer")
       (load-theme 'ef-summer))
-  (if (string-equal-ignore-case user-boot-theme "dark")
+  (if (string-equal-ignore-case user-boot-theme "owl")
 	  (load-theme 'ef-owl))
   (if (string-equal-ignore-case user-boot-theme "autumn")
 	  (load-theme 'ef-autumn))
