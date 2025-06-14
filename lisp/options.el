@@ -5,6 +5,7 @@
 (savehist-mode)
 (recentf-mode)
 (global-auto-revert-mode)
+(context-menu-mode)
 
 ;;; Set options
 (which-key-setup-side-window-right-bottom)
