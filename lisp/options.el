@@ -23,7 +23,6 @@
  evil-want-keybinding nil
  tab-width 4
  ring-bell-function 'ignore
- inferior-lisp-program "sbcl"
  package-archive-priorities '(("gnu" . 15)
 							  ("nongnu" . 10)
 							  ("melpa" . 5)))
