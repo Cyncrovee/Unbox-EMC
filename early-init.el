@@ -41,5 +41,6 @@
   (insert-button "Exit Emacs"
 				 'action (lambda (button)
 						   (kill-emacs)))
+  (newline)
   (read-only-mode)
   (goto-char 1))
