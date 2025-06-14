@@ -21,7 +21,12 @@
 
  ;; This variable (user-completion-provider) sets the completion provider.
  ;; Set to "corfu" for corfu, or "company" for company.
- user-completion-provider "corfu")
+ user-completion-provider "corfu"
+
+ ;; Language support.
+ ;; To enable support for a language, the value of the associated variable from nil to t.
+ user-support-rust nil
+ user-support-common-lisp nil)
 
 ;;; Put anything else you want in this function! It will be run after all the other config files
 (defun unbox-user-function ())

@@ -2,6 +2,8 @@
 (defvar user-boot-theme nil)
 (defvar user-cursor-blink)
 (defvar user-completion-provider)
+(defvar user-support-rust)
+(defvar user-support-common-lisp)
 (load-file (concat user-emacs-directory "/lisp/user.el"))
 
 ;;; Load elisp files

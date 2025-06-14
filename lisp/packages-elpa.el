@@ -43,11 +43,14 @@
   :ensure t
   :hook
   ((lisp-mode emacs-lisp-mode) . aggressive-indent-mode))
-(use-package sly
-  :ensure t)
-(use-package rust-mode
-  :ensure t
-  :hook (rust-mode . 'eglot-ensure))
+(if user-support-common-lisp
+	(use-package sly
+	  :ensure t))
+(if user-support-rust
+	(use-package rust-mode
+	  :ensure t
+	  :hook
+	  ('rust-mode . 'eglot-ensure)))
 (use-package markdown-mode
   :ensure t)
 (use-package consult
