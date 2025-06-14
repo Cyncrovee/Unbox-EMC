@@ -12,6 +12,11 @@
  ;; Any other value will not load a theme, allowing you to load your own.
  ;; Alternatively, comment out the line to show a theme selection promt at boot.
  user-boot-theme "summer"
+ ;; This variable (user-cursor-blink) enables/disables cursor blinking.
+ ;; The following options are available:
+ ;; "true": enable cursor blinking
+ ;; Any other value will disable cursor blinking
+ user-cursor-blink "false"
  ;; This variable (user-completion-provider) sets the completion provider.
  ;; Set to "corfu" for corfu, or "company" for company.
  user-completion-provider "corfu")

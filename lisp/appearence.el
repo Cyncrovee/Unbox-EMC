@@ -1,3 +1,4 @@
+;;; Load theme set in user.el
 (use-package ef-themes
   :ensure t
   :config
@@ -15,3 +16,8 @@
 	  (load-theme 'ef-winter))
   (if (string-equal-ignore-case user-boot-theme "bio")
 	  (load-theme 'ef-bio)))
+
+;;; Enable/disable cursor blinking from option in user.el
+(if (string-equal-ignore-case user-cursor-blink "true")
+	(blink-cursor-mode 1)
+  (blink-cursor-mode 0))
