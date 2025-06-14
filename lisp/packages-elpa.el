@@ -21,8 +21,7 @@
 	(interactive)
   (progn
 	(setopt user-boot-theme
-			(completing-read "No theme set in user.el file. Set theme for this session? (Light, dark or summer. Or use a different value to not load a theme): " '("light" "dark" "summer")))
-	(load-file (concat user-emacs-directory "/lisp/theme.el"))))
+			(completing-read "No theme set in user.el file. Set theme for this session? (Press tab to see default values. Or use a different value to not load a theme): " '("light" "spring" "summer" "owl" "autumn" "winter" "bio")))
 	(load-file (concat user-emacs-directory "/lisp/appearence.el"))))
   (use-package marginalia
 	:ensure t
