@@ -11,3 +11,5 @@
 (load-file (concat user-emacs-directory "/lisp/packages-elpa.el"))
 (load-file (concat user-emacs-directory "/lisp/packages-melpa.el"))
 (load-file (concat user-emacs-directory "/lisp/keymaps.el"))
+
+(unbox-user-function)
