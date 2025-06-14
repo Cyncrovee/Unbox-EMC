@@ -6,7 +6,7 @@
 (defvar user-support-common-lisp)
 (load-file (concat user-emacs-directory "/lisp/user.el"))
 
-;;; Load elisp files
+;;; Load elisp files. These files are loaded in a specific order; changing said order could mess up the config. Be careful!
 (load-file (concat user-emacs-directory "/lisp/appearence.el"))
 (load-file (concat user-emacs-directory "/lisp/functions.el"))
 (load-file (concat user-emacs-directory "/lisp/options.el"))
