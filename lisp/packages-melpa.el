@@ -21,7 +21,9 @@
   (setopt doom-modeline-icon nil))
 (use-package olivetti
   :ensure t
-  :init
-  (setopt olivetti-body-width 0.70))
+  :config
+  (setopt olivetti-body-width 0.70)
+  :hook
+  (eww-mode . olivetti-mode))
 (use-package focus
   :ensure t)
