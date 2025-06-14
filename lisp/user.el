@@ -25,8 +25,8 @@
 
  ;; Language support.
  ;; To enable support for a language, the value of the associated variable from nil to t.
- user-support-rust nil
- user-support-common-lisp nil)
+ user-support-rust nil         ; Requires rust-analyzer to be installed!
+ user-support-common-lisp nil) ; Remember to set your inferior lisp program!
 
 ;;; Put anything else you want in this function! It will be run after all the other config files
 (defun unbox-user-function ())
