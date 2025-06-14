@@ -2,6 +2,10 @@
 
 Unbox-EMC is an opinionated Emacs distribution, meant to provide a nice out-of-the-box experience, keeping the end-user setup minimal while still having the bells and whistles of most Emacs configs.
 
+## Prerequisites:
+- Emacs 30.1 or later
+- The Git version control system. Git helps with installation/updating, and possibly other stuff. I’m not sure if it’s a hard requirement, but I would recommend it regardless
+
 ## Installation (Linux):
 First ensure that there isn't already a `~/config/emacs/` and/or `~/.emacs.d/` folder, and/or `~/.emacs` file present, as it might override this config.
 
