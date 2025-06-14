@@ -17,11 +17,10 @@
  ;; The following options are available:
  ;; "true": enable cursor blinking
  ;; Any other value will disable cursor blinking
-
  user-cursor-blink "false"
+
  ;; This variable (user-completion-provider) sets the completion provider.
  ;; Set to "corfu" for corfu, or "company" for company.
-
  user-completion-provider "corfu")
 
 ;;; Put anything else you want in this function! It will be run after all the other config files
