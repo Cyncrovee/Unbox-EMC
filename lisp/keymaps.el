@@ -69,6 +69,7 @@
 ;;; Buffers
 (which-key-add-key-based-replacements "<leader> b" "Buffers")
 (evil-global-set-key 'normal (kbd "<leader> bm") 'buffer-menu)
+(evil-global-set-key 'normal (kbd "<leader> bw") 'consult-buffer)
 (evil-global-set-key 'normal (kbd "<leader> bc") 'kill-current-buffer)
 (evil-global-set-key 'normal (kbd "<leader> bt") 'term)
 ;;; Tabs
