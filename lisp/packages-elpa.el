@@ -23,6 +23,7 @@
 	(setopt user-boot-theme
 			(completing-read "No theme set in user.el file. Set theme for this session? (Light, dark or summer. Or use a different value to not load a theme): " '("light" "dark" "summer")))
 	(load-file (concat user-emacs-directory "/lisp/theme.el"))))
+	(load-file (concat user-emacs-directory "/lisp/appearence.el"))))
   (use-package marginalia
 	:ensure t
 	:init
