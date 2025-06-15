@@ -23,7 +23,7 @@
 	(insert "You can access the user.el file with '<leader> ffe'. This file is for high level configuration, and is intended to be relatively simple and easy to use.\n")
 	(insert "If you want to access the full config, you can use '<leader> ffc'\n")
 	(newline)
-	(insert "** The leader key is most likely set to space.\n")
+	(insert "* The leader key is most likely set to space.\n")
 	(newline)
 	(insert-button "Open user.el"
 				   'action (lambda (button)
@@ -44,9 +44,13 @@
 	(insert-button "Exit Emacs"
 				   'action (lambda (button)
 							 (kill-emacs)))
-	(newline)
+	(insert "             <leader> <end>\n")
 	(read-only-mode)
 	(goto-char 1))
   (switch-to-buffer "*start*")
+  ;; Unless the font size is already at a certain height, scale it up a bit
+  (if (<= (face-attribute 'default :height) 150)
+	  (text-scale-increase 2))
   (olivetti-mode)
+  (olivetti-set-width 0.35)
   (tab-line-mode)) ; For some reason the start buffer doesn’t respect global-tab-line-mode already being enabled, so it’s enabled here as well.
