@@ -36,7 +36,8 @@
   :hook
   ((lisp-mode emacs-lisp-mode conf-space-mode) . rainbow-delimiters-mode))
 (use-package magit
-  :ensure t)
+  :ensure t
+  :defer t)
 (use-package diff-hl
   :ensure t)
 (use-package aggressive-indent
