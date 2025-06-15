@@ -94,6 +94,7 @@
 (evil-global-set-key 'visual (kbd "<leader> le") 'eval-region)
 ;;; Modes/Misc Toggles
 (which-key-add-key-based-replacements "<leader> m" "Modes")
+(evil-global-set-key 'normal (kbd "<leader> mi") 'eww)
 (evil-global-set-key 'normal (kbd "<leader> mo") 'olivetti-mode)
 (evil-global-set-key 'normal (kbd "<leader> mc") 'focus-mode)
 (evil-global-set-key 'normal (kbd "<leader> mh") 'global-diff-hl-mode)
