@@ -1,6 +1,5 @@
 ;;; Enable modes
 (electric-pair-mode)
-(electric-quote-mode)
 (which-key-mode)
 (savehist-mode)
 (recentf-mode)
