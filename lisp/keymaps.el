@@ -44,6 +44,11 @@
 (evil-global-set-key 'normal (kbd "<leader> ffe") 'open-user-file)
 (evil-global-set-key 'normal (kbd "<leader> fcd") 'make-directory)
 (evil-global-set-key 'normal (kbd "<leader> fcf") 'make-empty-file)
+;;; Consult
+(which-key-add-key-based-replacements "<leader> c" "Consult")
+(evil-global-set-key 'normal (kbd "<leader> cr") 'consult-recent-file)
+(evil-global-set-key 'normal (kbd "<leader> cg") 'consult-grep)
+(evil-global-set-key 'normal (kbd "<leader> cb") 'consult-buffer)
 ;;; Describe
 (which-key-add-key-based-replacements "<leader> d" "Describe")
 (evil-global-set-key 'normal (kbd "<leader> ds") 'describe-symbol)
@@ -72,7 +77,6 @@
 ;;; Buffers
 (which-key-add-key-based-replacements "<leader> b" "Buffers")
 (evil-global-set-key 'normal (kbd "<leader> bm") 'buffer-menu)
-(evil-global-set-key 'normal (kbd "<leader> bw") 'consult-buffer)
 (evil-global-set-key 'normal (kbd "<leader> bc") 'kill-current-buffer)
 (evil-global-set-key 'normal (kbd "<leader> bt") 'term)
 ;;; Tabs
