@@ -1,8 +1,11 @@
 ;;; Setup keymaps
-;;; General
+;;; Initial configuration
 (evil-set-leader 'normal (kbd "SPC")) ; Set leader key (normal mode)
 (evil-set-leader 'visual (kbd "SPC")) ; Set leader key (visual mode)
 (evil-global-set-key 'normal (kbd "<leader> SPC") 'execute-extended-command) ; Double tap space for M-x functionality (I think)
+(evil-global-set-key 'normal (kbd "<leader> .") 'find-file)
+(evil-global-set-key 'normal (kbd "<leader> /") 'dired)
+;; Restart Emacs
 (which-key-add-key-based-replacements "<leader> q" "Restart Emacs")
 (evil-global-set-key 'normal (kbd "<leader> qq") 'restart-emacs)
 ;;; Write
@@ -33,8 +36,6 @@
 (which-key-add-key-based-replacements "<leader> ff" "Find/Navigate Files/Directories")
 (which-key-add-key-based-replacements "<leader> fp" "Find/Navigate Projects")
 (which-key-add-key-based-replacements "<leader> fc" "Create Files/Directories")
-(evil-global-set-key 'normal (kbd "<leader> fff") 'find-file)
-(evil-global-set-key 'normal (kbd "<leader> ffd") 'dired)
 (evil-global-set-key 'normal (kbd "<leader> ffr") 'recentf)
 (evil-global-set-key 'normal (kbd "<leader> ffo") 'recentf-open-files)
 (evil-global-set-key 'normal (kbd "<leader> fps") 'project-switch-project)
