@@ -17,7 +17,5 @@
 ;;; Run the user function defined in user.el
 (unbox-user-function)
 
-;;; Switch to custom start buffer
-(switch-to-buffer "*start*")
-(global-tab-line-mode) ; For some reason the start buffer doesn’t respect tab-line-mode being enabled in early-init.el, so it’s enabled here instead.
-(olivetti-mode)
+;;; Create/Switch to custom start buffer
+(show-unbox-emc-start)
