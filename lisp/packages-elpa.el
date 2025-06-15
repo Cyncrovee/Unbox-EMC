@@ -39,7 +39,8 @@
   :ensure t
   :defer t)
 (use-package diff-hl
-  :ensure t)
+  :ensure t
+  :defer t)
 (use-package aggressive-indent
   :ensure t
   :hook
