@@ -49,6 +49,9 @@
 (evil-global-set-key 'normal (kbd "<leader> ds") 'describe-symbol)
 (evil-global-set-key 'normal (kbd "<leader> dk") 'describe-key)
 (evil-global-set-key 'normal (kbd "<leader> dm") 'describe-key)
+;;; Org
+(which-key-add-key-based-replacements "<leader> o" "Org")
+(evil-global-set-key 'normal (kbd "<leader> oa") 'org-agenda)
 ;;; Sly
 (which-key-add-key-based-replacements "<leader> s" "Sly")
 (evil-global-set-key 'normal (kbd "<leader> sl") 'sly)
