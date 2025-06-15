@@ -47,7 +47,8 @@
   ((lisp-mode emacs-lisp-mode) . aggressive-indent-mode))
 (if user-support-common-lisp
 	(use-package sly
-	  :ensure t))
+	  :ensure t
+	  :defer t))
 (if user-support-rust
 	(use-package rust-mode
 	  :ensure t
