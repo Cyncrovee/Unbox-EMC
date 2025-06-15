@@ -15,4 +15,4 @@ git clone https://github.com/Cyncrovee/Unbox-EMC.git ~/.config/emacs
 ```
 
 ## Configuration:
-If you want to keep things simple, the user.el file (accesed by the "(leader) ffe" keymap) allows for easy configuration of Unbox-EMC. If you want, you can also view the full config with "(leader) ffc", however be warned this may create major merge conflicts with the remote repository.
+If you want to keep things simple, the user.el file (accesed by the `<leader> ffe` keymap) allows for easy configuration of Unbox-EMC. If you want, you can also view the full config with `<leader> ffc`, however be warned this may create major merge conflicts with the remote repository.
