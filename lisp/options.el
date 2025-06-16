@@ -32,3 +32,6 @@
           mode-line-position
           vc-mode
           mode-line-modes))
+
+(if user-support-python
+	(add-hook 'python-mode-hook 'eglot-ensure))
