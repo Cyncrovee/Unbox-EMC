@@ -1,4 +1,64 @@
 ;;; Setup custom functions
+(defun show-unbox-emc-start ()
+  (interactive)
+  (if (get-buffer "*start*")
+	  (switch-to-buffer "*start*")
+	(with-current-buffer (get-buffer-create "*start*")
+	  (insert "* Welcome to Unbox-EMC!\n")
+	  (insert "[")
+	  (insert-button "View Repository ->"
+					 'face "unbox-button-face"
+					 'help-echo "Open the Unbox-EMC repository (may open in external browser)"
+					 'action (lambda (button)
+							   (browse-url "https://github.com/Cyncrovee/Unbox-EMC")))
+	  (insert "]")
+	  (newline)
+	  (newline)
+	  (insert "If this is your first time booting, you may see some warning/error messages. These (hopefully) shouldn’t be a problem unless they show up again after reboot.\n")
+	  (newline)
+	  (insert "You can access the user.el file with '<leader> ffe'. This file is for high level configuration, and is intended to be relatively simple and easy to use.\n")
+	  (insert "If you want to access the full config, you can use '<leader> ffc'\n")
+	  (newline)
+	  (insert "* The leader key is most likely set to space.\n")
+	  (newline)
+	  (insert-button "Open user.el"
+					 'action (lambda (button)
+							   (open-user-file)))
+	  (insert "           <leader> ffe\n")
+	  (insert-button "Open Full Config"
+					 'action (lambda (button)
+							   (open-emacs-config)))
+	  (insert "       <leader> ffc\n")
+	  (insert-button "Use the Buffer Menu"
+					 'action (lambda (button)
+							   (buffer-menu)))
+	  (insert "    <leader> bm\n")
+	  (insert-button "Restart Emacs"
+					 'action (lambda (button)
+							   (restart-emacs)))
+	  (insert "          <leader> qr\n")
+	  (insert-button "Exit Emacs"
+					 'action (lambda (button)
+							   (kill-emacs)))
+	  (insert "             <leader> <end>\n")
+	  (newline)
+	  (insert "Emacs Init Time: ")
+	  (insert-button (emacs-init-time)
+					 'face "unbox-button-face"
+					 'help-echo "Open the help buffer for emacs-init-time"
+					 'action (lambda (button)
+							   (describe-command 'emacs-init-time)))
+	  (newline)
+	  (insert "Note: this time may not be entirely accurate\n")
+	  (read-only-mode)
+	  (goto-char (point-min)))
+	(switch-to-buffer "*start*")
+	;; Unless the font size is already at a certain height, scale it up a bit
+	(if (<= (face-attribute 'default :height) 150)
+		(text-scale-increase 2))
+	(olivetti-mode)
+	(olivetti-set-width 0.45)))
+
 (defun use-company-completion ()
   (use-package company
     :ensure t

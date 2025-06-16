@@ -21,3 +21,10 @@
 (if (string-equal-ignore-case user-cursor-blink "true")
 	(blink-cursor-mode 1)
   (blink-cursor-mode 0))
+
+;;; Create custom face(s)
+(defface unbox-button-face
+  '((t :foreground "#479b3f"
+	   :weight bold
+	   :underline t))
+  "Face for buttons in the Unbox-EMC start buffer")
