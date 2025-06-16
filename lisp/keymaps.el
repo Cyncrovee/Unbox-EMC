@@ -61,18 +61,22 @@
 (which-key-add-key-based-replacements "<leader> o" "Org")
 (evil-global-set-key 'normal (kbd "<leader> oa") 'org-agenda)
 ;;; Sly
-(which-key-add-key-based-replacements "<leader> s" "Sly")
-(evil-global-set-key 'normal (kbd "<leader> sl") 'sly)
-(evil-global-set-key 'normal (kbd "<leader> sb") 'sly-eval-buffer)
-(evil-global-set-key 'normal (kbd "<leader> sf") 'sly-eval-defun)
-(evil-global-set-key 'visual (kbd "<leader> sr") 'sly-eval-region)
+(if user-support-common-lisp
+	(progn
+	  (which-key-add-key-based-replacements "<leader> s" "Sly")
+	  (evil-global-set-key 'normal (kbd "<leader> sl") 'sly)
+	  (evil-global-set-key 'normal (kbd "<leader> sb") 'sly-eval-buffer)
+	  (evil-global-set-key 'normal (kbd "<leader> sf") 'sly-eval-defun)
+	  (evil-global-set-key 'visual (kbd "<leader> sr") 'sly-eval-region)))
 ;;; Eglot
 (which-key-add-key-based-replacements "<leader> l" "Elgot")
 (evil-global-set-key 'normal (kbd "<leader> lf") 'eglot-format-buffer)
 (evil-global-set-key 'normal (kbd "<leader> la") 'eglot-code-actions)
 ;;; Rust
-(which-key-add-key-based-replacements "<leader> r" "Rust")
-(evil-global-set-key 'normal (kbd "<leader> rr") 'rust-run)
+(if user-support-rust
+	(progn
+	  (which-key-add-key-based-replacements "<leader> r" "Rust")
+	  (evil-global-set-key 'normal (kbd "<leader> rr") 'rust-run)))
 ;;; Menus
 (which-key-add-key-based-replacements "<leader> u" "Menus")
 (evil-global-set-key 'normal (kbd "<leader> up") 'list-processes)
