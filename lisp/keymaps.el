@@ -30,6 +30,8 @@
 (evil-global-set-key 'normal (kbd "<left>") 'evil-window-left)
 (evil-global-set-key 'normal (kbd "<right>") 'evil-window-right)
 (evil-global-set-key 'normal (kbd "C-=") 'balance-windows)
+(evil-global-set-key 'normal (kbd "<leader> -") 'split-window-horizontally)
+(evil-global-set-key 'normal (kbd "<leader> |") 'split-window-vertically)
 ;;; Magit
 (evil-global-set-key 'normal (kbd "<f9>") 'magit) ; Use magit with F9
 (evil-global-set-key 'normal (kbd "<C-f9>") 'simple-magit) ; Opens Magit, then deletes other windows
