@@ -54,5 +54,5 @@
 	(if (<= (face-attribute 'default :height) 150)
 		(text-scale-increase 2))
 	(olivetti-mode)
-	(olivetti-set-width 0.35)
+	(olivetti-set-width 0.45)
 	(tab-line-mode))) ; For some reason the start buffer doesn’t respect global-tab-line-mode already being enabled, so it’s enabled here as well.
