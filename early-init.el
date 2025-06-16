@@ -14,6 +14,11 @@
 
 ;;; Custom start buffer
 (setopt inhibit-startup-screen t)
+(defface unbox-button-face
+  '((t :foreground "#479b3f"
+	   :weight bold
+	   :underline t))
+  "Face for buttons in the Unbox-EMC start buffer")
 (defun show-unbox-emc-start ()
   (interactive)
   (if (get-buffer "*start*")
