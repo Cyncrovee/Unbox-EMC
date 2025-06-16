@@ -84,10 +84,10 @@
 (evil-global-set-key 'normal (kbd "<leader> bt") 'term)
 ;;; Tabs
 (which-key-add-key-based-replacements "<leader> t" "Tabs")
-(evil-global-set-key 'normal (kbd "<leader> tn") 'tab-line-new-tab)
-(evil-global-set-key 'normal (kbd "<leader> tc") 'tab-line-close-tab)
-(evil-global-set-key 'normal (kbd "C-<tab>") 'tab-line-switch-to-next-tab)
-(evil-global-set-key 'normal (kbd "C-<iso-lefttab>") 'tab-line-switch-to-prev-tab)
+(evil-global-set-key 'normal (kbd "<leader> tn") 'centaur-tabs--create-new-tab)
+(evil-global-set-key 'normal (kbd "<leader> tc") 'kill-current-buffer)
+(evil-global-set-key 'normal (kbd "C-<tab>") 'centaur-tabs-forward)
+(evil-global-set-key 'normal (kbd "C-<iso-lefttab>") 'centaur-tabs-backward)
 ;;; Lines/Region
 (which-key-add-key-based-replacements "<leader> l" "Lines/Region")
 (evil-global-set-key 'normal (kbd "<leader> lg") 'join-line) ; Connect current line to above line

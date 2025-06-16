@@ -1,5 +1,11 @@
 ;;; Setup MELPA Stable packages
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(use-package centaur-tabs
+  :ensure t
+  :config
+  (centaur-tabs-mode)
+  (setopt centaur-tabs-set-icons nil
+		  centaur-tabs-cycle-scope 'tabs))
 (use-package evil-collection
   :ensure t
   :init
