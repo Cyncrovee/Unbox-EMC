@@ -52,8 +52,17 @@
 					 'action (lambda (button)
 							   (kill-emacs)))
 	  (insert "             <leader> <end>\n")
+	  (newline)
+	  (insert "Emacs Init Time: ")
+	  (insert-button (emacs-init-time)
+					 'face "unbox-button-face"
+					 'help-echo "Open the help buffer for emacs-init-time"
+					 'action (lambda (button)
+							   (describe-command 'emacs-init-time)))
+	  (newline)
+	  (insert "Note: this time may not be entirely accurate\n")
 	  (read-only-mode)
-	  (goto-char 1))
+	  (goto-char (point-min)))
 	(switch-to-buffer "*start*")
 	;; Unless the font size is already at a certain height, scale it up a bit
 	(if (<= (face-attribute 'default :height) 150)
