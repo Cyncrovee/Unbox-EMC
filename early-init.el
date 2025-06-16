@@ -25,6 +25,15 @@
 	  (switch-to-buffer "*start*")
 	(with-current-buffer (get-buffer-create "*start*")
 	  (insert "* Welcome to Unbox-EMC!\n")
+	  (insert "[")
+	  (insert-button "View Repository ->"
+					 'face "unbox-button-face"
+					 'help-echo "Open the Unbox-EMC repository (may open in external browser)"
+					 'action (lambda (button)
+							   (browse-url "https://github.com/Cyncrovee/Unbox-EMC")))
+	  (insert "]")
+	  (newline)
+	  (newline)
 	  (insert "If this is your first time booting, you may see some warning/error messages. These (hopefully) shouldn’t be a problem unless they show up again after reboot.\n")
 	  (newline)
 	  (insert "You can access the user.el file with '<leader> ffe'. This file is for high level configuration, and is intended to be relatively simple and easy to use.\n")
