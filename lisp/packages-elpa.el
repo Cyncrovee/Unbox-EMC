@@ -45,15 +45,6 @@
   :ensure t
   :hook
   ((lisp-mode emacs-lisp-mode) . aggressive-indent-mode))
-(if user-support-common-lisp
-	(use-package sly
-	  :ensure t
-	  :defer t))
-(if user-support-rust
-	(use-package rust-mode
-	  :ensure t
-	  :hook
-	  ('rust-mode . 'eglot-ensure)))
 (use-package markdown-mode
   :ensure t)
 (use-package consult
@@ -62,3 +53,18 @@
   :ensure t)
 (use-package embark-consult
   :ensure t)
+
+;;; User language support (ELPA and builtin)
+(if user-support-rust
+	(use-package rust-mode
+	  :ensure t
+	  :hook
+	  ('rust-mode . 'eglot-ensure)))
+
+(if user-support-common-lisp
+	(use-package sly
+	  :ensure t
+	  :defer t))
+
+(if user-support-python
+	(add-hook 'python-mode-hook 'eglot-ensure))

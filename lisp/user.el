@@ -27,7 +27,8 @@
  ;; To enable support for a language, the value of the associated variable from nil to t.
  user-support-rust nil         ; Requires rust-analyzer to be installed!
  user-support-common-lisp nil  ; Remember to set your inferior lisp program!
- user-support-python nil)      ; Requires a python LSP to be installed! (see https://github.com/joaotavoro#connection-to-a-server for LSP options)
+ user-support-python nil       ; Requires a python LSP to be installed! (see https://github.com/joaotavoro#connection-to-a-server for LSP options)
+ user-support-lua nil)         ; Simply installs lua-mode from MELPA, no OOTB LSP at the moment
 
 ;;; Put anything else you want in this function! It will be run after all the other config files
 (defun unbox-user-function ())

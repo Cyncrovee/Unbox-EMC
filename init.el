@@ -5,6 +5,7 @@
 (defvar user-support-rust)
 (defvar user-support-common-lisp)
 (defvar user-support-python)
+(defvar user-support-lua)
 (load-file (concat user-emacs-directory "/lisp/user.el"))
 
 ;;; Load elisp files. These files are loaded in a specific order; changing said order could mess up the config. Be careful!
