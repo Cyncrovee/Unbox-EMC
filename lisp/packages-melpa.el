@@ -31,5 +31,9 @@
   (setopt olivetti-body-width 0.70)
   :hook
   (eww-mode . olivetti-mode))
+(use-package crux
+  :ensure t
+  :defer t)
 (use-package focus
-  :ensure t)
+  :ensure t
+  :defer t)
