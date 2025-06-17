@@ -38,7 +38,6 @@
 ;;; Files/Directories
 (which-key-add-key-based-replacements "<leader> f" "Files/Directories")
 (which-key-add-key-based-replacements "<leader> ff" "Find/Navigate Files/Directories")
-(which-key-add-key-based-replacements "<leader> fp" "Find/Navigate Projects")
 (which-key-add-key-based-replacements "<leader> fc" "Create Files/Directories")
 (evil-global-set-key 'normal (kbd "<leader> ffr") 'recentf)
 (evil-global-set-key 'normal (kbd "<leader> ffo") 'recentf-open-files)
@@ -47,6 +46,7 @@
 (evil-global-set-key 'normal (kbd "<leader> fcd") 'make-directory)
 (evil-global-set-key 'normal (kbd "<leader> fcf") 'make-empty-file)
 ;;; Projects
+(which-key-add-key-based-replacements "<leader> p" "Find/Navigate Projects")
 (evil-global-set-key 'normal (kbd "<leader> ps") 'project-switch-project)
 (evil-global-set-key 'normal (kbd "<leader> pd") 'project-dired)
 (evil-global-set-key 'normal (kbd "<leader> pf") 'project-find-file)
