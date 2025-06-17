@@ -81,6 +81,7 @@
             corfu-auto-delay 0.0
             corfu-auto-prefix 0
             corfu-preview-current nil
+			corfu-preselect 'prompt
             corfu-quit-no-match 'separator)
     :bind (:map corfu-map
                 ("<tab>" . 'corfu-next)
