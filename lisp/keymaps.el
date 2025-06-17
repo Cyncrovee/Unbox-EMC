@@ -67,6 +67,10 @@
 ;;; Org
 (which-key-add-key-based-replacements "<leader> o" "Org")
 (evil-global-set-key 'normal (kbd "<leader> oa") 'org-agenda)
+(evil-global-set-key 'normal (kbd "<leader> oo") 'org-open-at-point)
+(evil-global-set-key 'normal (kbd "<leader> ol") 'org-insert-link)
+(evil-global-set-key 'normal (kbd "<leader> os") 'org-insert-timestamp)
+(evil-global-set-key 'normal (kbd "<leader> of") 'open-user-org-files)
 ;;; Sly
 (if user-support-common-lisp
 	(progn
