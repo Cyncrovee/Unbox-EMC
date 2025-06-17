@@ -54,6 +54,7 @@
 (use-package embark-consult
   :ensure t)
 (use-package org
+  :defer t
   :hook
   ('org-mode . 'org-indent-mode))
 
