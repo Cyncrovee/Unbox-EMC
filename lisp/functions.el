@@ -104,6 +104,11 @@
   (interactive)
   (find-file-existing (concat user-emacs-directory "lisp/user.el")))
 
+(defun open-user-org-files ()
+  "Open the Emacs directory in Dired."
+  (interactive)
+  (dired org-agenda-files))
+
 (defun evil-write-quit ()
   "Call evil-write, then evil-quit."
   (interactive)
