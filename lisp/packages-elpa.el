@@ -53,6 +53,9 @@
   :ensure t)
 (use-package embark-consult
   :ensure t)
+(use-package org
+  :hook
+  ('org-mode . 'org-indent-mode))
 
 ;;; User language support (ELPA and builtin)
 (if user-support-rust
