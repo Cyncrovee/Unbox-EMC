@@ -7,6 +7,8 @@
 (evil-global-set-key 'normal (kbd "<leader> <end>") 'kill-emacs)
 (evil-global-set-key 'normal (kbd "<leader> .") 'find-file)
 (evil-global-set-key 'normal (kbd "<leader> /") 'dired)
+(evil-global-set-key 'normal (kbd "C-=") 'text-scale-increase)
+(evil-global-set-key 'normal (kbd "C--") 'text-scale-decrease)
 ;; Restart Emacs
 (which-key-add-key-based-replacements "<leader> q" "Restart Emacs")
 (evil-global-set-key 'normal (kbd "<leader> qq") 'restart-emacs)
