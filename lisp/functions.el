@@ -57,7 +57,7 @@
 	(if (<= (face-attribute 'default :height) 150)
 		(text-scale-increase 2))
 	(olivetti-mode)
-	(olivetti-set-width 0.45)))
+	(olivetti-set-width 0.55)))
 
 (defun use-company-completion ()
   (use-package company
