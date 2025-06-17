@@ -1,4 +1,4 @@
-;;; Setup packages (ELPA)
+;;; Setup packages (ELPA and built-in)
 (use-package evil
   :ensure t
   :init
