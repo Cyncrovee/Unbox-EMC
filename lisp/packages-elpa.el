@@ -62,6 +62,7 @@
 (if user-support-rust
 	(use-package rust-mode
 	  :ensure t
+	  :defer t
 	  :hook
 	  ('rust-mode . 'eglot-ensure)))
 
