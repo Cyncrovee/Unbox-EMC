@@ -1,4 +1,4 @@
-;;; Setup MELPA Stable packages
+;;; Setup MELPA packages
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (use-package centaur-tabs
   :ensure t
