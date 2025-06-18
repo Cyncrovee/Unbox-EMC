@@ -31,8 +31,8 @@
 (evil-global-set-key 'normal (kbd "<down>") 'evil-window-down)
 (evil-global-set-key 'normal (kbd "<left>") 'evil-window-left)
 (evil-global-set-key 'normal (kbd "<right>") 'evil-window-right)
-(evil-global-set-key 'normal (kbd "<leader> -") 'split-window-horizontally)
-(evil-global-set-key 'normal (kbd "<leader> |") 'split-window-vertically)
+(evil-global-set-key 'normal (kbd "<leader> |") 'split-window-horizontally)
+(evil-global-set-key 'normal (kbd "<leader> -") 'split-window-vertically)
 (evil-global-set-key 'normal (kbd "<leader> =") 'balance-windows)
 ;;; Magit
 (evil-global-set-key 'normal (kbd "<f9>") 'magit) ; Use magit with F9
