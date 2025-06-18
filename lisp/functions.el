@@ -110,6 +110,11 @@
   (interactive)
   (dired org-agenda-files))
 
+(defun open-default-org-file ()
+  "Open the org-default-notes-file."
+  (interactive)
+  (find-file-existing org-default-notes-file))
+
 (defun evil-write-quit ()
   "Call evil-write, then evil-quit."
   (interactive)
