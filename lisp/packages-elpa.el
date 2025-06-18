@@ -46,7 +46,8 @@
   :hook
   ((lisp-mode emacs-lisp-mode) . aggressive-indent-mode))
 (use-package markdown-mode
-  :ensure t)
+  :ensure t
+  :defer t)
 (use-package consult
   :ensure t)
 (use-package embark
