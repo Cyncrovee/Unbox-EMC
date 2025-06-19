@@ -69,6 +69,7 @@
 (evil-global-set-key 'normal (kbd "<leader> oa") 'org-agenda)
 (evil-global-set-key 'normal (kbd "<leader> oc") 'org-capture)
 (evil-global-set-key 'normal (kbd "<leader> on") 'open-default-org-file)
+(evil-global-set-key 'normal (kbd "<leader> ot") 'org-toggle-checkbox)
 (evil-global-set-key 'normal (kbd "<leader> oo") 'org-open-at-point)
 (evil-global-set-key 'normal (kbd "<leader> ol") 'org-insert-link)
 (evil-global-set-key 'normal (kbd "<leader> os") 'org-insert-timestamp)
