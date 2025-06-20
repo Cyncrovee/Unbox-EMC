@@ -29,10 +29,10 @@
 					 'action (lambda (button)
 							   (open-emacs-config)))
 	  (insert "       <leader> ffc\n")
-	  (insert-button "Use the Buffer Menu"
+	  (insert-button "Use the Ibuffer Menu"
 					 'action (lambda (button)
-							   (buffer-menu)))
-	  (insert "    <leader> bm\n")
+							   (ibuffer)))
+	  (insert "   <leader> bi\n")
 	  (insert-button "Restart Emacs"
 					 'action (lambda (button)
 							   (restart-emacs)))
