@@ -17,18 +17,18 @@
  ;; The following options are available:
  ;; "true": enable cursor blinking
  ;; Any other value will disable cursor blinking
- user-cursor-blink "false"
+ unbox-cursor-blink "false"
 
  ;; This variable (user-completion-provider) sets the completion provider.
  ;; Set to "corfu" for corfu, or "company" for company.
- user-completion-provider "corfu"
+ unbox-completion-provider "corfu"
 
  ;; Language support.
  ;; To enable support for a language, the value of the associated variable from nil to t.
- user-support-rust nil         ; Requires rust-analyzer to be installed!
- user-support-common-lisp nil  ; Remember to set your inferior lisp program!
- user-support-python nil       ; Requires a python LSP to be installed! (see https://github.com/joaotavoro#connection-to-a-server for LSP options)
- user-support-lua nil)         ; Simply installs lua-mode from MELPA, no OOTB LSP at the moment
+ unbox-support-rust nil         ; Requires rust-analyzer to be installed!
+ unbox-support-common-lisp nil  ; Remember to set your inferior lisp program!
+ unbox-support-python nil       ; Requires a python LSP to be installed! (see https://github.com/joaotavoro#connection-to-a-server for LSP options)
+ unbox-support-lua nil)         ; Simply installs lua-mode from MELPA, no OOTB LSP at the moment
 
 ;;; Put anything else you want in this function! It will be run after all the other config files
 (defun unbox-user-function ())
