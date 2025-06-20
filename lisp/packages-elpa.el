@@ -5,9 +5,9 @@
   (evil-mode)
   :config
   (evil-set-undo-system 'undo-redo))
-(if (string-equal-ignore-case user-completion-provider "corfu")
+(if (string-equal-ignore-case unbox-completion-provider "corfu")
 	(use-corfu-completion))
-(if (string-equal-ignore-case user-completion-provider "company")
+(if (string-equal-ignore-case unbox-completion-provider "company")
 	(use-company-completion))
 (use-package vertico
   :ensure t
@@ -60,17 +60,17 @@
   ('org-mode . 'org-indent-mode))
 
 ;;; User language support (ELPA and builtin)
-(if user-support-rust
+(if unbox-support-rust
 	(use-package rust-mode
 	  :ensure t
 	  :defer t
 	  :hook
 	  ('rust-mode . 'eglot-ensure)))
 
-(if user-support-common-lisp
+(if unbox-support-common-lisp
 	(use-package sly
 	  :ensure t
 	  :defer t))
 
-(if user-support-python
+(if unbox-support-python
 	(add-hook 'python-mode-hook 'eglot-ensure))

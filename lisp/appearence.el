@@ -18,7 +18,7 @@
 	  (load-theme 'ef-bio)))
 
 ;;; Enable/disable cursor blinking from option in user.el
-(if (string-equal-ignore-case user-cursor-blink "true")
+(if (string-equal-ignore-case unbox-cursor-blink "true")
 	(blink-cursor-mode 1)
   (blink-cursor-mode 0))
 

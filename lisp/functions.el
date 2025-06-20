@@ -1,5 +1,5 @@
 ;;; Setup custom functions
-(defun show-unbox-emc-start ()
+(defun unbox-emc-start ()
   (interactive)
   (if (get-buffer "*start*")
 	  (switch-to-buffer "*start*")

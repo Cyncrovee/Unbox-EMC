@@ -39,7 +39,7 @@
   :defer t)
 
 ;;; User language support (MELPA)
-(if user-support-lua
+(if unbox-support-lua
 	(use-package lua-mode
 	  :pin melpa
 	  :ensure t

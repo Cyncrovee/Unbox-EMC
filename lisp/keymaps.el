@@ -75,7 +75,7 @@
 (evil-global-set-key 'normal (kbd "<leader> os") 'org-insert-timestamp)
 (evil-global-set-key 'normal (kbd "<leader> of") 'open-user-org-files)
 ;;; Sly
-(if user-support-common-lisp
+(if unbox-support-common-lisp
 	(progn
 	  (which-key-add-key-based-replacements "<leader> s" "Sly")
 	  (evil-global-set-key 'normal (kbd "<leader> sl") 'sly)
@@ -87,7 +87,7 @@
 (evil-global-set-key 'normal (kbd "<leader> lf") 'eglot-format-buffer)
 (evil-global-set-key 'normal (kbd "<leader> la") 'eglot-code-actions)
 ;;; Rust
-(if user-support-rust
+(if unbox-support-rust
 	(progn
 	  (which-key-add-key-based-replacements "<leader> r" "Rust")
 	  (evil-global-set-key 'normal (kbd "<leader> rr") 'rust-run)))
