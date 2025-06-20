@@ -30,7 +30,7 @@
 (use-package indent-bars
   :ensure t
   :hook
-  ((rust-mode conf-space-mode) . indent-bars-mode))
+  ((rust-mode lua-mode python-mode conf-space-mode) . indent-bars-mode))
 (use-package rainbow-delimiters
   :ensure t
   :hook
@@ -44,7 +44,7 @@
 (use-package aggressive-indent
   :ensure t
   :hook
-  ((lisp-mode emacs-lisp-mode) . aggressive-indent-mode))
+  ((lisp-mode emacs-lisp-mode python-mode) . aggressive-indent-mode))
 (use-package markdown-mode
   :ensure t
   :defer t)
