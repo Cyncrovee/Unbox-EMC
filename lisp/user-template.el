@@ -3,7 +3,8 @@
  ;; Set the completion provider ("company" or "corfu")
  :completion "corfu"
 
- ;; Set language support
+ ;; Set Unbox-EMC language support
+ ;; To enable Unbox-EMC support for a language, change it's value from nil to t
  :rust nil
  :common-lisp nil
  :python nil
