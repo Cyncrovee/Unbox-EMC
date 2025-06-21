@@ -17,16 +17,10 @@
   (define-key vertico-map (kbd "<tab>") 'vertico-next)
   (define-key vertico-map (kbd "<backtab>") 'vertico-previous)
   (define-key vertico-map (kbd "<C-return>") 'vertico-insert))
-(if user-boot-theme
-	(interactive)
-  (progn
-	(setopt user-boot-theme
-			(completing-read "No theme set in user.el file. Set theme for this session? (Press tab to see default values. Or use a different value to not load a theme): " '("light" "spring" "summer" "owl" "autumn" "winter" "bio")))
-	(load-file (concat user-emacs-directory "/lisp/appearence.el"))))
-  (use-package marginalia
-	:ensure t
-	:init
-	(marginalia-mode))
+(use-package marginalia
+  :ensure t
+  :init
+  (marginalia-mode))
 (use-package indent-bars
   :ensure t
   :hook
