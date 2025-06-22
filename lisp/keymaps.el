@@ -3,7 +3,7 @@
 (evil-set-leader 'normal (kbd "SPC")) ; Set leader key (normal mode)
 (evil-set-leader 'visual (kbd "SPC")) ; Set leader key (visual mode)
 (evil-global-set-key 'normal (kbd "<leader> SPC") 'execute-extended-command) ; Double tap space for M-x functionality (I think)
-(evil-global-set-key 'normal (kbd "<leader> <home>") 'show-unbox-emc-start)
+(evil-global-set-key 'normal (kbd "<leader> <home>") 'unbox-emc-start)
 (evil-global-set-key 'normal (kbd "<leader> <end>") 'kill-emacs)
 (evil-global-set-key 'normal (kbd "<leader> .") 'find-file)
 (evil-global-set-key 'normal (kbd "<leader> /") 'dired)
