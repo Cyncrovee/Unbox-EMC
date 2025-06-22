@@ -25,7 +25,7 @@ If you want to just take a look at what Unbox has to offer, and/or help with the
 
 Either way, the decicion if yours to make.
 ### Can I contribute to Unbox-EMC?
-Yes! I am happy to accept contributions, be it issues, feature requests, pull requests, etc.
+Yes! I am happy to accept contributions, be it issues, feature requests, pull requests, etc. However there is limitation in that I do not accept any generative AI made contributions.
 ### Does Unbox-EMC support X Language?
 Unbox currently has support for the following:
 - Rust (via rust-mode and eglot)
