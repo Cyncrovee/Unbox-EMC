@@ -10,7 +10,7 @@
  :python nil
  :lua nil
  :zig nil          ; The ZLS LSP is recommended!
- :elm nil)
+ :elm nil)         ; elm-language-server is recommended!
 
 ;;; Put anything else you want in this function! It will be run after all the other config files
 (defun unbox-user-function ()
