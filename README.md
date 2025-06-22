@@ -32,5 +32,6 @@ Unbox currently has support for the following:
 - Common Lisp (via Sly, though you will probably want to set your `inferior-lisp-program` as well)
 - Python (via python-mode and eglot)
 - Lua (via lua-mode)
+- Zig (via zig-mode and eglot)
 
 However, do keep in mind that Emacs OOTB does support more languages not in this list (for example HTML/CSS), so you can use more languages than just the ones listed. The languages above are there because they have an Unbox-EMC specific configuration.
