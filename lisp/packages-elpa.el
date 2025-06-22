@@ -68,3 +68,9 @@
 
 (if unbox-support-python
 	(add-hook 'python-mode-hook 'eglot-ensure))
+
+(if unbox-support-zig
+	(use-package zig-mode
+	  :ensure t
+	  :defer t)
+  (add-hook 'zig-mode-hook 'eglot-ensure))
