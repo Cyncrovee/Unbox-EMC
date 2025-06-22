@@ -44,3 +44,10 @@
 	  :pin melpa
 	  :ensure t
 	  :defer t))
+
+(if unbox-support-elm
+	(use-package elm-mode
+	  :ensure t
+	  :defer t
+	  :hook
+	  ('elm-mode . 'eglot-ensure)))

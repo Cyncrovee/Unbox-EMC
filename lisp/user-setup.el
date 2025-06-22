@@ -10,11 +10,13 @@
   "Enables Unbox-EMC support for the Lua programming language.")
 (defvar unbox-support-zig nil
   "Enables Unbox-EMC support for the Zig programming language.")
+(defvar unbox-support-elm nil
+  "Enables Unbox-EMC support for the Elm programming language.")
 
 (unless (file-exists-p (concat user-emacs-directory "lisp/user.el"))
   (copy-file (concat user-emacs-directory "lisp/user-template.el") (concat user-emacs-directory "lisp/user.el")))
 
-(cl-defun unbox-setup (&key completion rust common-lisp python lua zig)
+(cl-defun unbox-setup (&key completion rust common-lisp python lua zig elm)
   (setq unbox-completion-provider completion)
   (if rust
 	  (setq unbox-support-rust t))
@@ -25,4 +27,6 @@
   (if lua
 	  (setq unbox-support-lua t))
   (if zig
-	  (setq unbox-support-zig t)))
+	  (setq unbox-support-zig t))
+  (if elm
+	  (setq unbox-support-elm t)))
