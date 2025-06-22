@@ -72,5 +72,6 @@
 (if unbox-support-zig
 	(use-package zig-mode
 	  :ensure t
-	  :defer t)
-  (add-hook 'zig-mode-hook 'eglot-ensure))
+	  :defer t
+	  :hook
+	  ('zig-mode . 'eglot-ensure)))
