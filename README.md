@@ -7,7 +7,7 @@ Unbox-EMC is an opinionated Emacs distribution, meant to provide a nice out-of-t
 - The Git version control system. Git helps with installation/updating, and possibly other stuff. I’m not sure if it’s a hard requirement, but I would recommend it regardless
 
 ## Installation (Linux):
-First ensure that there isn't already a `~/config/emacs/` and/or `~/.emacs.d/` folder, and/or `~/.emacs` file present, as it might override this config.
+First ensure that there isn't already a `~/.config/emacs/` and/or `~/.emacs.d/` folder, and/or `~/.emacs` file present, as it might override this config.
 
 After which, you can run this is your shell:
 ```
