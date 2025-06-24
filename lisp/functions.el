@@ -135,3 +135,16 @@
   (magit)
   (delete-other-windows)
   (olivetti-mode))
+
+(define-minor-mode unbox-global-olv-mode
+  "Unbox-EMC mode: Enables olivetti (Olv) mode in many buffers (the minibuffer is not included)."
+  :init-value nil
+  :global t
+  :keymap nil
+  :lighter nil
+  (if unbox-global-olivetti-mode
+	  (add-hook 'window-configuration-change-hook '(lambda ()
+													 (when unbox-global-olivetti-mode
+													   (when (not (active-minibuffer-window))
+														 (when (not olivetti-mode)
+														   (olivetti-mode))))))))
