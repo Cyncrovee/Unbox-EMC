@@ -59,6 +59,7 @@
 (evil-global-set-key 'normal (kbd "<leader> cr") 'consult-recent-file)
 (evil-global-set-key 'normal (kbd "<leader> cg") 'consult-grep)
 (evil-global-set-key 'normal (kbd "<leader> cb") 'consult-buffer)
+(evil-global-set-key 'normal (kbd "<leader> cf") 'consult-flymake)
 ;;; Describe
 (which-key-add-key-based-replacements "<leader> d" "Describe")
 (evil-global-set-key 'normal (kbd "<leader> ds") 'describe-symbol)
@@ -83,9 +84,13 @@
 	  (evil-global-set-key 'normal (kbd "<leader> sf") 'sly-eval-defun)
 	  (evil-global-set-key 'visual (kbd "<leader> sr") 'sly-eval-region)))
 ;;; Eglot
-(which-key-add-key-based-replacements "<leader> l" "Elgot")
-(evil-global-set-key 'normal (kbd "<leader> lf") 'eglot-format-buffer)
-(evil-global-set-key 'normal (kbd "<leader> la") 'eglot-code-actions)
+(which-key-add-key-based-replacements "<leader> e" "Elgot")
+(evil-global-set-key 'normal (kbd "<leader> ef") 'eglot-format-buffer)
+(evil-global-set-key 'normal (kbd "<leader> ec") 'eglot-code-actions)
+;;; Flymake
+(which-key-add-key-based-replacements "<leader> y" "Flymake")
+(evil-global-set-key 'normal (kbd "<leader> yn") 'flymake-goto-next-error)
+(evil-global-set-key 'normal (kbd "<leader> yp") 'flymake-goto-prev-error)
 ;;; Rust
 (if unbox-support-rust
 	(progn
