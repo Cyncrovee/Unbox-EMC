@@ -18,15 +18,15 @@
 
 (cl-defun unbox-setup (&key completion rust common-lisp python lua zig elm)
   (setq unbox-completion-provider completion)
-  (if rust
-	  (setq unbox-support-rust t))
-  (if common-lisp
-	  (setq unbox-support-common-lisp t))
-  (if python
-	  (setq unbox-support-python t))
-  (if lua
-	  (setq unbox-support-lua t))
-  (if zig
-	  (setq unbox-support-zig t))
-  (if elm
-	  (setq unbox-support-elm t)))
+  (when rust
+	(setq unbox-support-rust t))
+  (when common-lisp
+	(setq unbox-support-common-lisp t))
+  (when python
+	(setq unbox-support-python t))
+  (when lua
+	(setq unbox-support-lua t))
+  (when zig
+	(setq unbox-support-zig t))
+  (when elm
+	(setq unbox-support-elm t)))

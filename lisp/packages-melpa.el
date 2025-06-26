@@ -39,15 +39,15 @@
   :defer t)
 
 ;;; User language support (MELPA)
-(if unbox-support-lua
-	(use-package lua-mode
-	  :pin melpa
-	  :ensure t
-	  :defer t))
+(when unbox-support-lua
+  (use-package lua-mode
+	:pin melpa
+	:ensure t
+	:defer t))
 
-(if unbox-support-elm
-	(use-package elm-mode
-	  :ensure t
-	  :defer t
-	  :hook
-	  ('elm-mode . 'eglot-ensure)))
+(when unbox-support-elm
+  (use-package elm-mode
+	:ensure t
+	:defer t
+	:hook
+	('elm-mode . 'eglot-ensure)))

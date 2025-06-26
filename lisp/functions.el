@@ -62,8 +62,8 @@
 	  (goto-char (point-min)))
 	(switch-to-buffer "*start*")
 	;; Unless the font size is already at a certain height, scale it up a bit
-	(if (<= (face-attribute 'default :height) 150)
-		(text-scale-increase 2))
+	(when (<= (face-attribute 'default :height) 150)
+	  (text-scale-increase 2))
 	(olivetti-mode)
 	(olivetti-set-width 0.55)))
 

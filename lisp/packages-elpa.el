@@ -5,10 +5,10 @@
   (evil-mode)
   :config
   (evil-set-undo-system 'undo-redo))
-(if (string-equal-ignore-case unbox-completion-provider "corfu")
-	(use-corfu-completion))
-(if (string-equal-ignore-case unbox-completion-provider "company")
-	(use-company-completion))
+(when (string-equal-ignore-case unbox-completion-provider "corfu")
+  (use-corfu-completion))
+(when (string-equal-ignore-case unbox-completion-provider "company")
+  (use-company-completion))
 (use-package vertico
   :ensure t
   :config
@@ -54,24 +54,24 @@
   ('org-mode . 'org-indent-mode))
 
 ;;; User language support (ELPA and builtin)
-(if unbox-support-rust
-	(use-package rust-mode
-	  :ensure t
-	  :defer t
-	  :hook
-	  ('rust-mode . 'eglot-ensure)))
+(when unbox-support-rust
+  (use-package rust-mode
+	:ensure t
+	:defer t
+	:hook
+	('rust-mode . 'eglot-ensure)))
 
-(if unbox-support-common-lisp
-	(use-package sly
-	  :ensure t
-	  :defer t))
+(when unbox-support-common-lisp
+  (use-package sly
+	:ensure t
+	:defer t))
 
-(if unbox-support-python
-	(add-hook 'python-mode-hook 'eglot-ensure))
+(when unbox-support-python
+  (add-hook 'python-mode-hook 'eglot-ensure))
 
-(if unbox-support-zig
-	(use-package zig-mode
-	  :ensure t
-	  :defer t
-	  :hook
-	  ('zig-mode . 'eglot-ensure)))
+(when unbox-support-zig
+  (use-package zig-mode
+	:ensure t
+	:defer t
+	:hook
+	('zig-mode . 'eglot-ensure)))

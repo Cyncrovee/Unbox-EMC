@@ -76,13 +76,12 @@
 (evil-global-set-key 'normal (kbd "<leader> os") 'org-insert-timestamp)
 (evil-global-set-key 'normal (kbd "<leader> of") 'open-user-org-files)
 ;;; Sly
-(if unbox-support-common-lisp
-	(progn
-	  (which-key-add-key-based-replacements "<leader> s" "Sly")
-	  (evil-global-set-key 'normal (kbd "<leader> sl") 'sly)
-	  (evil-global-set-key 'normal (kbd "<leader> sb") 'sly-eval-buffer)
-	  (evil-global-set-key 'normal (kbd "<leader> sf") 'sly-eval-defun)
-	  (evil-global-set-key 'visual (kbd "<leader> sr") 'sly-eval-region)))
+(when unbox-support-common-lisp
+  (which-key-add-key-based-replacements "<leader> s" "Sly")
+  (evil-global-set-key 'normal (kbd "<leader> sl") 'sly)
+  (evil-global-set-key 'normal (kbd "<leader> sb") 'sly-eval-buffer)
+  (evil-global-set-key 'normal (kbd "<leader> sf") 'sly-eval-defun)
+  (evil-global-set-key 'visual (kbd "<leader> sr") 'sly-eval-region))
 ;;; Eglot
 (which-key-add-key-based-replacements "<leader> e" "Elgot")
 (evil-global-set-key 'normal (kbd "<leader> ef") 'eglot-format-buffer)
@@ -92,10 +91,9 @@
 (evil-global-set-key 'normal (kbd "<leader> yn") 'flymake-goto-next-error)
 (evil-global-set-key 'normal (kbd "<leader> yp") 'flymake-goto-prev-error)
 ;;; Rust
-(if unbox-support-rust
-	(progn
-	  (which-key-add-key-based-replacements "<leader> r" "Rust")
-	  (evil-global-set-key 'normal (kbd "<leader> rr") 'rust-run)))
+(when unbox-support-rust
+  (which-key-add-key-based-replacements "<leader> r" "Rust")
+  (evil-global-set-key 'normal (kbd "<leader> rr") 'rust-run))
 ;;; Menus
 (which-key-add-key-based-replacements "<leader> u" "Menus")
 (evil-global-set-key 'normal (kbd "<leader> up") 'list-processes)
