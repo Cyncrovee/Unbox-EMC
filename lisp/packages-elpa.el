@@ -15,7 +15,8 @@
   (vertico-mode)
   (vertico-mouse-mode)
   (define-key vertico-map (kbd "<tab>") 'vertico-next)
-  (define-key vertico-map (kbd "<backtab>") 'vertico-previous))
+  (define-key vertico-map (kbd "<backtab>") 'vertico-previous)
+  (define-key vertico-map (kbd "<C-return>") 'vertico-insert))
 (use-package marginalia
   :ensure t
   :init
