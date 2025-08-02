@@ -16,6 +16,7 @@
  word-wrap t
  truncate-lines t
  vc-follow-symlinks t
+ dired-isearch-filenames t
  make-backup-files nil
  auto-save-default nil
  create-lockfiles nil
