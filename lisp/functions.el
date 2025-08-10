@@ -136,6 +136,14 @@
   (delete-other-windows)
   (olivetti-mode))
 
+(defun delete-all-buffers-except-current ()
+  "Goes through each buffer, only deleting it if the buffer name matches that of the current buffer."
+  (interactive)
+  (let ((current-buffer-name (buffer-name (current-buffer))))
+    (dolist (buf (buffer-list))
+      (when (not (string-equal current-buffer-name (buffer-name buf)))
+        (kill-buffer buf)))))
+
 (define-minor-mode unbox-global-olv-mode
   "Unbox-EMC mode: Enables olivetti (Olv) mode in many buffers (the minibuffer is not included)."
   :init-value nil
